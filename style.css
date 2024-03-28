@@ -9,3 +9,24 @@ main {
   /*no tiene margenes arriba ni abajo , a los lados tiene un margen lo suficiente para que este centrado*/
   margin: 0 auto; 
 }
+
+/*este es el contenedor*/
+.hero{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-auto-rows: 400px;
+}
+
+.hero-image{
+  width: 100%;
+  height: 100%;
+  /*la imagen se ajuste al espacio que esta ocupando
+  y se muestre completa*/
+  object-fit: contain;
+}
+
+.info{
+ align-self: center;
+ 
+
+}
