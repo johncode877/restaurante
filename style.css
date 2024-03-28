@@ -5,19 +5,19 @@
 
 main {
   max-width: 1200px;
-  
+
   /*no tiene margenes arriba ni abajo , a los lados tiene un margen lo suficiente para que este centrado*/
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 /*este es el contenedor*/
-.hero{
+.hero {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-auto-rows: 400px;
 }
 
-.hero-image{
+.hero-image {
   width: 100%;
   height: 100%;
   /*la imagen se ajuste al espacio que esta ocupando
@@ -25,15 +25,16 @@ main {
   object-fit: contain;
 }
 
-.info{
- align-self: center; 
+.info {
+  align-self: center;
 }
 
 .info-title {
- color: #333;
- font-size: 2.5rem;
- font-weight: bolder;
- margin-bottom: 24px; /* para dar espacio*/
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 24px;
+  /* para dar espacio*/
 }
 
 .info-subtitle {
@@ -52,7 +53,7 @@ main {
 }
 
 
-.dishes { 
+.dishes {
   /*margen para que la parte superior no se pegue a la inferior y 
   o a los costados*/
   margin: 100px 0;
@@ -66,27 +67,60 @@ main {
   font-size: 2rem;
 }
 
-.dishes-grid {  
-  
-  display:grid;
+.dishes-grid {
+
+  display: grid;
   /*grid-template-columns: repeat(4,1fr);*/
   /* vamos a redimensionar los elementos de la grilla
   ya que estan muy grandes*/
-  grid-template-columns: repeat(4,minmax(150px,200px));
-  grid-auto-rows: 1fr; /*se define un alto de 1fr para todas las filas*/
+  grid-template-columns: repeat(4, minmax(150px, 200px));
+  grid-auto-rows: 1fr;
+  /*se define un alto de 1fr para todas las filas*/
   gap: 25px;
   /*centramos la grilla*/
   justify-content: center;
 }
 
 .dishes-item {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .dishes-item__big {
   /* fila / columna   fila / columna */
- grid-area: 1/1/3/3;
+  grid-area: 1/1/3/3;
 
+}
+
+.menu {
+  margin-bottom: 200px;
+}
+
+.menu-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 25px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit,150px);
+  
+}
+
+.menu-grid-item {
+  background-color:  rgba(255, 127, 80, 0.678);
+  padding: 15px;
+  border-top-left-radius: 40px;
+}
+
+.menu-grid-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
