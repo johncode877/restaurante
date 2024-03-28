@@ -1,0 +1,11 @@
+* {
+  /*se especifica este tipo de fuente que la trae por defecto todos los navegadores*/
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  
+  /*no tiene margenes arriba ni abajo , a los lados tiene un margen lo suficiente para que este centrado*/
+  margin: 0 auto; 
+}
